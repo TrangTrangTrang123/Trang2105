@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Cá Nhân</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header, nav, section, footer {
+            margin-bottom: 40px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ccc;
+        }
+
+        .project {
+            margin-bottom: 40px;
+        }
+
+        .project h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            margin-bottom: 20px;
+        }
+
+        .project img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        section ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        section ul li {
+            margin-bottom: 10px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Trang Cá Nhân</h1>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">Giới Thiệu</a></li>
+                <li><a href="#portfolio">Dự Án</a></li>
+                <li><a href="#interests">Sở Thích</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="about">
+        <div class="container">
+            <h2>Giới Thiệu</h2>
+            <p>Xin chào! Tôi là Thuỳ Trang</p>
+            <img src="VKM_5563.jpg" alt="Project 1">
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="container">
+            <h2>Mình đã làm gì </h2>
+            <div class="project">
+                <h3>Mình đã viết gì </h3>
+                <p>Những Lá Thư Tay</p>
+                <img src="NLTT.jpg" alt="Project 1">
+            </div>
+            <div class="project">
+                <h3>Photochallenge</h3>
+                <p>Một dự án truyền thông mà mình đã ấp ủ và thực hiện được 1 năm </p>
+                <img src="Photochallenge.jpg" alt="Project 2">
+            </div>
+        </div>
+    </section>
+    <section id="interests">
+        <div class="container">
+            <h2>Sở Thích</h2>
+            <ul>
+                <li>Đọc sách</li>
+                <li>Xem phim</li>
+                <li>Âm nhạc</li>
+                <li>Thể thao</li>
+            </ul>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Liên Hệ</h2>
+            <form id="contact-form">
+                <label for="name">Họ Tên:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Nội Dung:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Gửi</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>Bản quyền © 2024 Trang Cá Nhân</p>
+        </div>
+    </footer>
+</body>
+</html>
